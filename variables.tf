@@ -14,7 +14,17 @@ variable "routing_mode" {
   type        = string
 }
 
-variable "auto_create_subnetworks" {
-  description = "Auto Create Subnetwork Flog"
-  type        = bool
+variable "cidr" {
+  description = "Subnetwork ip_cidr_range value. Example: 10.0.0.0/22"
+  type        = string
+}
+
+variable "subnetwork_name" {
+  description = "Google Cloud Platform Subnetwork Network Name"
+  type        = string
+}
+
+variable "region" {
+  description = "Region of subnetwork"
+  type        = string
 }
